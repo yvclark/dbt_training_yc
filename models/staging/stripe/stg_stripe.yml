@@ -1,0 +1,11 @@
+version: 2
+
+models:
+
+    - name: stg_payments
+      description: Staged payment data from our jstripe app.
+      columns: 
+        - name: payment_id
+          description: The primary key for paymentss.
+        - name: payment_method
+          description: '{{ doc("payment_method") }}'
